@@ -6,11 +6,15 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.hloong.androidherotest.util.AppUtil;
+
 /**
  * Created by hl on 16/4/8.
  */
 public class CircleProgressView extends View {
     private Paint mCircle;
+    private int mCircleXY;
+    private float mRadius;
 
     public CircleProgressView(Context context) {
         super(context);
@@ -27,8 +31,8 @@ public class CircleProgressView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-//        mCircle = length/2;
-
+        mCircleXY = AppUtil.getWidth(getContext())/2;
+        mRadius = (float) (AppUtil.getWidth(getContext()) * 0.5 / 2);
     }
 
     @Override
