@@ -18,7 +18,13 @@
         android:id="@+id/cv"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="200dp"
         android:background="@color/colorAccent"
         />
+    <com.hloong.androidherotest.ui.MusicView
+        android:layout_marginTop="220dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/mv"/>
 </RelativeLayout>
