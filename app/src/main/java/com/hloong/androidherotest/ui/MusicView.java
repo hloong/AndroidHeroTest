@@ -2,7 +2,10 @@ package com.hloong.androidherotest.ui;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.LinearGradient;
 import android.graphics.Paint;
+import android.graphics.Shader;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -38,7 +41,7 @@ public class MusicView extends View {
     private void initView() {
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
-        mPaint.setColor(R.color.colorPrimaryDark);
+        mPaint.setColor(getResources().getColor(R.color.colorPrimaryDark));
     }
 
     @Override
@@ -47,6 +50,9 @@ public class MusicView extends View {
         mWidth = getWidth();
         mRectHeight = getHeight();
         mRectWidth = (int)(mWidth * 0.6 / mRectCount);
+        //增加一个渐变效果
+        LinearGradient mLinearGradient = new LinearGradient(0,0,mRectWidth,mRectHeight, Color.YELLOW,Color.BLUE, Shader.TileMode.CLAMP);
+        mPaint.setShader(mLinearGradient);
 
     }
 

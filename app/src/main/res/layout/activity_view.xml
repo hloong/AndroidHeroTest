@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hloong.androidherotest.ViewActivity">
+    <com.hloong.androidherotest.ui.CustomViewGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:textSize="100dp"
+            android:text="少年郎我同你刚" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:textSize="100dp"
+            android:text="少年郎我同你刚2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="100dp"
+            android:background="@color/colorAccent"
+            android:text="少年郎我同你刚3" />
+    </com.hloong.androidherotest.ui.CustomViewGroup>
+</LinearLayout>
