@@ -28,5 +28,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="跳转到viewgroup 触摸"/>
+    <Button
+        android:id="@+id/btn_palette"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动态获取图片颜色对应设置actionbar"/>
 
 </LinearLayout>
