@@ -25,7 +25,11 @@
         <!-- 自定义滚动view，仅供linearlayout使用 -->
         <activity android:name=".ViewActivity" />
         <activity android:name=".TouchActivity" />
-        <activity android:name=".BitmapActivity" android:theme="@style/AppThemeFive"></activity>
+        <activity
+            android:name=".BitmapActivity"
+            android:theme="@style/AppThemeFive" />
+        <activity android:name=".RecyclerActivity" />
+        <activity android:name=".SystemInfoActivity" />
     </application>
 
 </manifest>

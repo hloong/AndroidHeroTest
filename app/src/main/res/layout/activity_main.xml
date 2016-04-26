@@ -33,5 +33,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="动态获取图片颜色对应设置actionbar"/>
+    <Button
+        android:id="@+id/btn_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取系统信息"/>
+    <Button
+        android:id="@+id/btn_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置_recycle"/>
 
 </LinearLayout>

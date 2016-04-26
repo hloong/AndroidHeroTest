@@ -9,6 +9,7 @@ import android.view.View;
 import com.hloong.androidherotest.bean.FeedBack;
 import com.hloong.androidherotest.ui.CircleProgressView;
 import com.hloong.androidherotest.util.LogUtil;
+import com.hloong.androidherotest.util.SystemInfoUtil;
 
 import cn.bmob.v3.Bmob;
 import cn.bmob.v3.listener.SaveListener;
@@ -44,6 +45,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,BitmapActivity.class));
+            }
+        });
+        findViewById(R.id.btn_info).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,SystemInfoActivity.class));
+            }
+        });
+        findViewById(R.id.btn_recycle).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,RecyclerActivity.class));
             }
         });
     }
