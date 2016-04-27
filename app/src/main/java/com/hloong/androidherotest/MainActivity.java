@@ -3,6 +3,7 @@ package com.hloong.androidherotest;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
@@ -22,6 +23,45 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Bmob.initialize(this,"94b9fa26a58b3a875c121e0a274083cd");
         initView();
+        LogUtil.d("main-->"+"onCreate");
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        LogUtil.d("main-->"+"_onStart");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        LogUtil.d("main-->"+"onRestart");
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        LogUtil.d("main-->"+"onDestroy");
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        LogUtil.d("main-->"+"onStop");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        LogUtil.d("main-->"+"onResume");
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        LogUtil.d("main-->"+"onPause");
     }
 
     private void initView() {

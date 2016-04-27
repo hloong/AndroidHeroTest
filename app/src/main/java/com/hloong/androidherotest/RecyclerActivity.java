@@ -107,4 +107,5 @@ public class RecyclerActivity extends AppCompatActivity {
             mAdapter.notifyDataSetChanged();
         }
     }
+
 }
