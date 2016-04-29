@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.hloong.androidherotest.bean.FeedBack;
 import com.hloong.androidherotest.ui.CircleProgressView;
+import com.hloong.androidherotest.ui.TouchFlowView;
 import com.hloong.androidherotest.util.LogUtil;
 import com.hloong.androidherotest.util.SystemInfoUtil;
 
@@ -71,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                startActivity(new Intent(MainActivity.this,ViewActivity.class));
-                  saveBmob();
+                startActivity(new Intent(MainActivity.this,ViewActivity.class));
+//                  saveBmob();
             }
         });
         findViewById(R.id.btn_view).setOnClickListener(new View.OnClickListener() {
@@ -97,6 +98,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,RecyclerActivity.class));
+            }
+        });
+        findViewById(R.id.btn_list).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,ListViewActivity.class));
+            }
+        });
+        findViewById(R.id.btn_touch_flow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,TouchFlowActivity.class));
             }
         });
     }

@@ -30,6 +30,8 @@
             android:theme="@style/AppThemeFive" />
         <activity android:name=".RecyclerActivity" />
         <activity android:name=".SystemInfoActivity" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".TouchFlowActivity"></activity>
     </application>
 
 </manifest>

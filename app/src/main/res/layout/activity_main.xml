@@ -1,47 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:scrollbars="none"
     tools:context="com.hloong.androidherotest.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
-    <com.hloong.androidherotest.ui.CircleProgressView
-        android:id="@+id/cv"
-        android:layout_margin="20dp"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@color/colorAccent"
-        />
-    <com.hloong.androidherotest.ui.MusicView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@color/colorAccent"
-        android:id="@+id/mv"/>
-    <Button
-        android:id="@+id/btn_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="跳转到viewgroup 触摸"/>
-    <Button
-        android:id="@+id/btn_palette"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="动态获取图片颜色对应设置actionbar"/>
-    <Button
-        android:id="@+id/btn_info"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="获取系统信息"/>
-    <Button
-        android:id="@+id/btn_recycle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="设置_recycle"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
+
+        <com.hloong.androidherotest.ui.CircleProgressView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent" />
+
+        <com.hloong.androidherotest.ui.MusicView
+            android:id="@+id/mv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跳转到viewgroup 触摸" />
+
+        <Button
+            android:id="@+id/btn_palette"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="动态获取图片颜色对应设置actionbar" />
+
+        <Button
+            android:id="@+id/btn_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取系统信息" />
+
+        <Button
+            android:id="@+id/btn_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置_recycle" />
+        <Button
+            android:id="@+id/btn_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置_list" />
+        <Button
+            android:id="@+id/btn_touch_flow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置手势跟随图片" />
+
+    </LinearLayout>
+</ScrollView>
