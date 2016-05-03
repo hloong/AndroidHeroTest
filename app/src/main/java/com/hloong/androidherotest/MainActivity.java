@@ -112,6 +112,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,TouchFlowActivity.class));
             }
         });
+        findViewById(R.id.btn_slide_menu).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,SlideMenuActivity.class));
+            }
+        });
     }
 
     /**

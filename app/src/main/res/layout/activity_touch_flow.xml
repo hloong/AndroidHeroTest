@@ -12,6 +12,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@color/colorAccent"
-
+        android:text="测试数据"
         />
 </RelativeLayout>

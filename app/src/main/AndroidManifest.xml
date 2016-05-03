@@ -31,7 +31,8 @@
         <activity android:name=".RecyclerActivity" />
         <activity android:name=".SystemInfoActivity" />
         <activity android:name=".ListViewActivity" />
-        <activity android:name=".TouchFlowActivity"></activity>
+        <activity android:name=".TouchFlowActivity" />
+        <activity android:name=".SlideMenuActivity"></activity>
     </application>
 
 </manifest>
