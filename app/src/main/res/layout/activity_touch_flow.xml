@@ -14,4 +14,12 @@
         android:background="@color/colorAccent"
         android:text="测试数据"
         />
+    <com.hloong.androidherotest.ui.DrawView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"/>
 </RelativeLayout>

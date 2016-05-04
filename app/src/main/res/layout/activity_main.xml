@@ -67,6 +67,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="侧滑栏" />
+        <Button
+            android:id="@+id/btn_clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绘制时钟" />
 
     </LinearLayout>
 </ScrollView>

@@ -118,6 +118,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,SlideMenuActivity.class));
             }
         });
+        findViewById(R.id.btn_clock).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,ClockActivity.class));
+            }
+        });
     }
 
     /**
