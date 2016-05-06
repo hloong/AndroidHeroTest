@@ -10,7 +10,7 @@ import android.widget.ListView;
  */
 public class ElasticityListView extends ListView {
 
-    private static int mMaxOverDistance = 96;
+    private static int mMaxOverDistance = 100;
     public ElasticityListView(Context context) {
         super(context);
     }

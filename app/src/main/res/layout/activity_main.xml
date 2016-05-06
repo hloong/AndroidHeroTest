@@ -72,6 +72,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="绘制时钟" />
+        <Button
+            android:id="@+id/btn_bitmap_canvas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义图片饱和度，亮度，等" />
 
     </LinearLayout>
 </ScrollView>

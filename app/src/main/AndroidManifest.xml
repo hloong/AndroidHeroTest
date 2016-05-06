@@ -33,7 +33,8 @@
         <activity android:name=".ListViewActivity" />
         <activity android:name=".TouchFlowActivity" />
         <activity android:name=".SlideMenuActivity" />
-        <activity android:name=".ClockActivity"></activity>
+        <activity android:name=".ClockActivity" />
+        <activity android:name=".BitmapCanvasActivity"></activity>
     </application>
 
 </manifest>
