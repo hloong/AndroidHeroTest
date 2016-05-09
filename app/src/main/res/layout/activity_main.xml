@@ -77,6 +77,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="自定义图片饱和度，亮度，等" />
+        <Button
+            android:id="@+id/btn_matrix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图片变换Matrix" />
 
     </LinearLayout>
 </ScrollView>

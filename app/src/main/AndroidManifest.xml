@@ -34,7 +34,8 @@
         <activity android:name=".TouchFlowActivity" />
         <activity android:name=".SlideMenuActivity" />
         <activity android:name=".ClockActivity" />
-        <activity android:name=".BitmapCanvasActivity"></activity>
+        <activity android:name=".BitmapCanvasActivity" />
+        <activity android:name=".MatrixActivity"></activity>
     </application>
 
 </manifest>
