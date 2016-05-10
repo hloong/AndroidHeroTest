@@ -82,6 +82,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="图片变换Matrix" />
+        <Button
+            android:id="@+id/btn_circle_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="圆角矩形图片" />
 
     </LinearLayout>
 </ScrollView>

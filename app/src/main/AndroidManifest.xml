@@ -35,7 +35,8 @@
         <activity android:name=".SlideMenuActivity" />
         <activity android:name=".ClockActivity" />
         <activity android:name=".BitmapCanvasActivity" />
-        <activity android:name=".MatrixActivity"></activity>
+        <activity android:name=".MatrixActivity" />
+        <activity android:name=".CircleImageActivity"></activity>
     </application>
 
 </manifest>

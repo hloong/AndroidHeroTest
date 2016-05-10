@@ -22,6 +22,7 @@ public class MatrixView extends View {
     private Bitmap bitmap;
     private float A;
     private float k = 1;
+
     public MatrixView(Context context) {
         super(context);
         initView();
@@ -72,9 +73,7 @@ public class MatrixView extends View {
         for (int j = 0; j <= HEIGHT; j++) {
             for (int i = 0; i <= WIDTH; i++) {
                 verts[(j * (WIDTH + 1) + i) * 2 + 0] += 0;
-                float offsetY =
-                        (float) Math.sin((float) i / WIDTH * 2 * Math.PI +
-                                Math.PI * k);
+                float offsetY =(float) Math.sin((float) i / WIDTH * 2 * Math.PI +Math.PI * k);
                 verts[(j * (WIDTH + 1) + i) * 2 + 1] =
                         orig[(j * WIDTH + i) * 2 + 1] + offsetY * A;
             }
