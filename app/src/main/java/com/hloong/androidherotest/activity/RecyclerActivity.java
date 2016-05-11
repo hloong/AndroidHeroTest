@@ -1,12 +1,10 @@
-package com.hloong.androidherotest;
+package com.hloong.androidherotest.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.app.Activity;
-import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,6 +13,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 
+import com.hloong.androidherotest.R;
 import com.hloong.androidherotest.adapter.RecyclerAdapter;
 
 import java.util.ArrayList;

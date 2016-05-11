@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,20 +23,21 @@
             </intent-filter>
         </activity>
         <!-- 自定义滚动view，仅供linearlayout使用 -->
-        <activity android:name=".ViewActivity" />
-        <activity android:name=".TouchActivity" />
+        <activity android:name=".activity.ViewActivity" />
+        <activity android:name=".activity.TouchActivity" />
         <activity
-            android:name=".BitmapActivity"
+            android:name=".activity.BitmapActivity"
             android:theme="@style/AppThemeFive" />
-        <activity android:name=".RecyclerActivity" />
-        <activity android:name=".SystemInfoActivity" />
-        <activity android:name=".ListViewActivity" />
-        <activity android:name=".TouchFlowActivity" />
-        <activity android:name=".SlideMenuActivity" />
-        <activity android:name=".ClockActivity" />
-        <activity android:name=".BitmapCanvasActivity" />
-        <activity android:name=".MatrixActivity" />
-        <activity android:name=".CircleImageActivity"></activity>
+        <activity android:name=".activity.RecyclerActivity" />
+        <activity android:name=".activity.SystemInfoActivity" />
+        <activity android:name=".activity.ListViewActivity" />
+        <activity android:name=".activity.TouchFlowActivity" />
+        <activity android:name=".activity.SlideMenuActivity" />
+        <activity android:name=".activity.ClockActivity" />
+        <activity android:name=".activity.BitmapCanvasActivity" />
+        <activity android:name=".activity.MatrixActivity" />
+        <activity android:name=".activity.CircleImageActivity" />
+        <activity android:name=".activity.GuaGuaKaActivity"></activity>
     </application>
 
 </manifest>

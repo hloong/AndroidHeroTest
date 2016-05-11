@@ -1,4 +1,4 @@
-package com.hloong.androidherotest;
+package com.hloong.androidherotest.activity;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -6,12 +6,12 @@ import android.graphics.Canvas;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Paint;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+
+import com.hloong.androidherotest.R;
 
 public class BitmapCanvasActivity extends AppCompatActivity {
     private float hue ,sat ,lum ;

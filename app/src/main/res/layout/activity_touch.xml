@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context="com.hloong.androidherotest.TouchActivity">
+    tools:context=".activity.TouchActivity">
 
     <com.hloong.androidherotest.ui.ViewGroupA
         android:layout_width="400dp"

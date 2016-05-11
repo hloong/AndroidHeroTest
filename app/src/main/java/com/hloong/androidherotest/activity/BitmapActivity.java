@@ -1,18 +1,16 @@
-package com.hloong.androidherotest;
+package com.hloong.androidherotest.activity;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.ColorDrawable;
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.graphics.Palette;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.hloong.androidherotest.R;
 
 public class BitmapActivity extends Activity {
     TextView textView1;

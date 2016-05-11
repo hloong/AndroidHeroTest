@@ -1,17 +1,14 @@
-package com.hloong.androidherotest;
+package com.hloong.androidherotest.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.hloong.androidherotest.R;
 import com.hloong.androidherotest.bean.FeedBack;
 import com.hloong.androidherotest.ui.CircleProgressView;
-import com.hloong.androidherotest.ui.TouchFlowView;
 import com.hloong.androidherotest.util.LogUtil;
-import com.hloong.androidherotest.util.SystemInfoUtil;
 
 import cn.bmob.v3.Bmob;
 import cn.bmob.v3.listener.SaveListener;
@@ -140,6 +137,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,CircleImageActivity.class));
+            }
+        });
+        findViewById(R.id.btn_guaguaka).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,GuaGuaKaActivity.class));
             }
         });
     }

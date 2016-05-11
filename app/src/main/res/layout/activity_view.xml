@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.hloong.androidherotest.ViewActivity">
+    tools:context=".activity.ViewActivity">
     <com.hloong.androidherotest.ui.CustomViewGroup
         android:layout_width="match_parent"
         android:layout_height="match_parent">

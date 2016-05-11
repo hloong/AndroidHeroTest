@@ -1,4 +1,4 @@
-package com.hloong.androidherotest;
+package com.hloong.androidherotest.activity;
 
 import android.animation.ObjectAnimator;
 import android.support.v7.app.AppCompatActivity;
@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
+import com.hloong.androidherotest.R;
 import com.hloong.androidherotest.ui.ElasticityListView;
 import com.hloong.androidherotest.util.LogUtil;
 

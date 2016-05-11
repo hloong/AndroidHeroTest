@@ -17,21 +17,21 @@ import com.hloong.androidherotest.R;
 /**
  * Created by Administrator on 2016/5/9.
  */
-public class CricleImageVIew extends View {
+public class CricleImageView extends View {
     private Bitmap mBitmap,mOut;
     private Paint paint;
 
-    public CricleImageVIew(Context context) {
+    public CricleImageView(Context context) {
         super(context);
         initView();
     }
 
-    public CricleImageVIew(Context context, AttributeSet attrs) {
+    public CricleImageView(Context context, AttributeSet attrs) {
         super(context, attrs);
         initView();
     }
 
-    public CricleImageVIew(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CricleImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initView();
     }
@@ -47,6 +47,8 @@ public class CricleImageVIew extends View {
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void initView() {
         mBitmap = BitmapFactory.decodeResource(getResources(),R.drawable.bitmapcanvas);
+
+
         mOut = Bitmap.createBitmap(mBitmap.getWidth(),mBitmap.getHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(mOut);
 

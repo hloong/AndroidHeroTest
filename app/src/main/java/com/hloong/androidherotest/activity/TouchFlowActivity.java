@@ -1,9 +1,11 @@
-package com.hloong.androidherotest;
+package com.hloong.androidherotest.activity;
 
 import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import com.hloong.androidherotest.R;
 
 public class TouchFlowActivity extends AppCompatActivity {
 

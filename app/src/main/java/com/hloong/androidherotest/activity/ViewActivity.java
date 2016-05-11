@@ -1,13 +1,15 @@
-package com.hloong.androidherotest;
+package com.hloong.androidherotest.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class TouchActivity extends AppCompatActivity {
+import com.hloong.androidherotest.R;
+
+public class ViewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_touch);
+        setContentView(R.layout.activity_view);
     }
 }

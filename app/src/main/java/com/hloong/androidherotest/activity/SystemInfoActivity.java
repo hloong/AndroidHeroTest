@@ -1,9 +1,10 @@
-package com.hloong.androidherotest;
+package com.hloong.androidherotest.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.hloong.androidherotest.R;
 import com.hloong.androidherotest.util.LogUtil;
 import com.hloong.androidherotest.util.SystemInfoUtil;
 

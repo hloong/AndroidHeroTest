@@ -1,13 +1,15 @@
-package com.hloong.androidherotest;
+package com.hloong.androidherotest.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class CircleImageActivity extends AppCompatActivity {
+import com.hloong.androidherotest.R;
+
+public class MatrixActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_circle_image);
+        setContentView(R.layout.activity_matrix);
     }
 }
