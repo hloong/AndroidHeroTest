@@ -37,7 +37,9 @@
         <activity android:name=".activity.BitmapCanvasActivity" />
         <activity android:name=".activity.MatrixActivity" />
         <activity android:name=".activity.CircleImageActivity" />
-        <activity android:name=".activity.GuaGuaKaActivity"></activity>
+        <activity android:name=".activity.GuaGuaKaActivity" />
+        <activity android:name=".activity.ShaderActivity" />
+        <activity android:name=".activity.ShadowActivity"></activity>
     </application>
 
 </manifest>

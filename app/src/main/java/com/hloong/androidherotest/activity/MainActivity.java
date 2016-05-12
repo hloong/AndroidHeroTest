@@ -145,6 +145,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,GuaGuaKaActivity.class));
             }
         });
+        findViewById(R.id.btn_shader).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,ShaderActivity.class));
+            }
+        });
+        findViewById(R.id.btn_shadow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,ShadowActivity.class));
+            }
+        });
     }
 
     /**
@@ -158,9 +170,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSuccess() {
                 LogUtil.d("保存成功");
-
             }
-
             @Override
             public void onFailure(int i, String s) {
                 LogUtil.d("保存失败");
