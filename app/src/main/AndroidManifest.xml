@@ -39,7 +39,8 @@
         <activity android:name=".activity.CircleImageActivity" />
         <activity android:name=".activity.GuaGuaKaActivity" />
         <activity android:name=".activity.ShaderActivity" />
-        <activity android:name=".activity.ShadowActivity"></activity>
+        <activity android:name=".activity.ShadowActivity" />
+        <activity android:name=".activity.SurfaceSinActivity"></activity>
     </application>
 
 </manifest>

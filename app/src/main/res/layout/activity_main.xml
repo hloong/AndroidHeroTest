@@ -102,6 +102,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="图片倒影效果" />
+        <Button
+            android:id="@+id/btn_sin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="surfaceview sin图" />
 
     </LinearLayout>
 </ScrollView>

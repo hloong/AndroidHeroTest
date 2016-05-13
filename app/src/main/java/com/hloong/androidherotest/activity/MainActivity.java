@@ -157,6 +157,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,ShadowActivity.class));
             }
         });
+        findViewById(R.id.btn_sin).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,SurfaceSinActivity.class));
+            }
+        });
     }
 
     /**
