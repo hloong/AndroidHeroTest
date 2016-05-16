@@ -40,7 +40,8 @@
         <activity android:name=".activity.GuaGuaKaActivity" />
         <activity android:name=".activity.ShaderActivity" />
         <activity android:name=".activity.ShadowActivity" />
-        <activity android:name=".activity.SurfaceSinActivity"></activity>
+        <activity android:name=".activity.SurfaceSinActivity" />
+        <activity android:name=".activity.AnimationActivity"></activity>
     </application>
 
 </manifest>
