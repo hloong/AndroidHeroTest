@@ -1,6 +1,7 @@
 package com.hloong.androidherotest.activity;
 
 import android.animation.Animator;
+import android.animation.AnimatorInflater;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -10,12 +11,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
-import android.view.animation.RotateAnimation;
-import android.view.animation.ScaleAnimation;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.hloong.androidherotest.R;
+import com.hloong.androidherotest.util.LogUtil;
 
 public class AnimationActivity extends AppCompatActivity {
     private TextView tv;
@@ -49,17 +49,19 @@ public class AnimationActivity extends AppCompatActivity {
         findViewById(R.id.btScale).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ScaleAnimation animation = new ScaleAnimation(0,2,0,2);
-                animation.setDuration(2000);
-                tv.startAnimation(animation);
+//                ScaleAnimation animation = new ScaleAnimation(0,2,0,2);
+//                animation.setDuration(2000);
+//                tv.startAnimation(animation);
+                scaleX(tv);
             }
         });
         findViewById(R.id.btRotate).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RotateAnimation animation = new RotateAnimation(0,360,RotateAnimation.RELATIVE_TO_SELF,0.5F,RotateAnimation.RELATIVE_TO_SELF,0.5F);
-                animation.setDuration(2000);
-                tv.startAnimation(animation);
+//                RotateAnimation animation = new RotateAnimation(0,360,RotateAnimation.RELATIVE_TO_SELF,0.5F,RotateAnimation.RELATIVE_TO_SELF,0.5F);
+//                animation.setDuration(2000);
+//                tv.startAnimation(animation);
+                ani3(tv);
             }
         });
 
@@ -134,5 +136,26 @@ public class AnimationActivity extends AppCompatActivity {
         set.setDuration(1000);
         set.playTogether(animator1,animator2,animator3);
         set.start();
+    }
+
+
+    private void scaleX(View view){
+        Animator anim = AnimatorInflater.loadAnimator(this,R.animator.scalex);
+        anim.setTarget(view);
+        anim.start();
+    }
+
+    private void ani3(View view){
+        view.animate().alpha(0).y(300).setDuration(1000).withStartAction(new Runnable() {
+            @Override
+            public void run() {
+                LogUtil.d("start-->");
+            }
+        }).withEndAction(new Runnable() {
+            @Override
+            public void run() {
+                LogUtil.d("start-->");
+            }
+        });
     }
 }
