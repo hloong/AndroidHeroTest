@@ -42,6 +42,7 @@
         <activity android:name=".activity.ShadowActivity" />
         <activity android:name=".activity.SurfaceSinActivity" />
         <activity android:name=".activity.AnimationActivity"></activity>
+        <activity android:name=".weibo.WeiboActivity"></activity>
     </application>
 
 </manifest>

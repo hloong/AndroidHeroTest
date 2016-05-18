@@ -9,6 +9,7 @@ import com.hloong.androidherotest.R;
 import com.hloong.androidherotest.bean.FeedBack;
 import com.hloong.androidherotest.ui.CircleProgressView;
 import com.hloong.androidherotest.util.LogUtil;
+import com.hloong.androidherotest.weibo.WeiboActivity;
 
 import cn.bmob.v3.Bmob;
 import cn.bmob.v3.listener.SaveListener;
@@ -167,6 +168,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,AnimationActivity.class));
+            }
+        });
+        findViewById(R.id.btn_weibo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,WeiboActivity.class));
             }
         });
     }

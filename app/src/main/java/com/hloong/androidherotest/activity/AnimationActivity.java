@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.hloong.androidherotest.R;
@@ -20,6 +21,7 @@ import com.hloong.androidherotest.util.LogUtil;
 public class AnimationActivity extends AppCompatActivity {
     private TextView tv;
     private Button btnPostion;
+    private LinearLayout ll;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,8 @@ public class AnimationActivity extends AppCompatActivity {
 
         tv = (TextView)findViewById(R.id.tvAni);
         btnPostion = (Button)findViewById(R.id.btPosition);
+        ll = (LinearLayout)findViewById(R.id.ll);
+
 
         findViewById(R.id.btAlpha).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -154,8 +158,11 @@ public class AnimationActivity extends AppCompatActivity {
         }).withEndAction(new Runnable() {
             @Override
             public void run() {
-                LogUtil.d("start-->");
+                LogUtil.d("end-->");
             }
         });
     }
+
+
+
 }
