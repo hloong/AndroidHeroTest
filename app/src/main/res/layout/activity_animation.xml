@@ -40,4 +40,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="旋转动画"/>
+    <ImageView
+        android:id="@+id/ivAni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tabbar_compose_more"
+        android:text="差值动画图片"/>
+    <Button
+        android:id="@+id/btAni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="差值动画按钮"/>
 </LinearLayout>

@@ -11,17 +11,23 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
+import android.view.animation.LayoutAnimationController;
+import android.view.animation.ScaleAnimation;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.hloong.androidherotest.R;
+import com.hloong.androidherotest.ui.CustomAni;
+import com.hloong.androidherotest.ui.CustomTV;
 import com.hloong.androidherotest.util.LogUtil;
 
 public class AnimationActivity extends AppCompatActivity {
     private TextView tv;
-    private Button btnPostion;
+    private Button btnPostion,btAni;
     private LinearLayout ll;
+    private ImageView ivAni;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +36,9 @@ public class AnimationActivity extends AppCompatActivity {
         tv = (TextView)findViewById(R.id.tvAni);
         btnPostion = (Button)findViewById(R.id.btPosition);
         ll = (LinearLayout)findViewById(R.id.ll);
+        ivAni = (ImageView)findViewById(R.id.ivAni);
+        btAni = (Button)findViewById(R.id.btAni);
+
 
 
         findViewById(R.id.btAlpha).setOnClickListener(new View.OnClickListener() {
@@ -69,7 +78,19 @@ public class AnimationActivity extends AppCompatActivity {
             }
         });
 
+        btAni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnAnim();
+            }
+        });
 
+        ivAni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                imgClose();
+            }
+        });
 
     }
 
@@ -163,6 +184,27 @@ public class AnimationActivity extends AppCompatActivity {
         });
     }
 
+    private void viewani(){
+        //设置过渡动画
+        ScaleAnimation sa = new ScaleAnimation(0,1,0,1);
+        sa.setDuration(2000);
+        //设置布局动画的显示属性
+        LayoutAnimationController lac = new LayoutAnimationController(sa,0.5F);
+        lac.setOrder(LayoutAnimationController.ORDER_NORMAL);
+        //为ViewGroup设置布局动画
+        ll.setLayoutAnimation(lac);
+    }
 
 
+    public void btnAnim() {
+        CustomAni customAnim = new CustomAni();
+        customAnim.setRotateY(30);
+        btAni.startAnimation(customAnim);
+    }
+
+    public void imgClose() {
+        CustomTV customTV = new CustomTV();
+        customTV.setRotateY(90);
+        ivAni.startAnimation(customTV);
+    }
 }
