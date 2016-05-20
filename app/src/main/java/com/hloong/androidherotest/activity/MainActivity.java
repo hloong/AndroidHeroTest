@@ -176,6 +176,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,WeiboActivity.class));
             }
         });
+        findViewById(R.id.btn_ani_f).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,AniMoreActivity.class));
+            }
+        });
     }
 
     /**

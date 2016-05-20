@@ -1,54 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    android:id="@+id/ll"
     android:animateLayoutChanges="true"
     tools:context="com.hloong.androidherotest.activity.AnimationActivity">
-    <TextView
-        android:id="@+id/tvAni"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="动画测试数据"
-        android:gravity="center"
-        android:padding="10dp"
-        android:background="@color/colorAccent"/>
 
-    <Button
-        android:id="@+id/btAlpha"
+    <LinearLayout
+        android:id="@+id/ll"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="透明度动画"/>
-    <Button
-        android:id="@+id/btPosition"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="位移动画"/>
-    <Button
-        android:id="@+id/btScale"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="缩放动画"/>
-    <Button
-        android:id="@+id/btRotate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="旋转动画"/>
-    <ImageView
-        android:id="@+id/ivAni"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/tabbar_compose_more"
-        android:text="差值动画图片"/>
-    <Button
-        android:id="@+id/btAni"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="差值动画按钮"/>
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="动画测试数据" />
+
+        <Button
+            android:id="@+id/btAlpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="透明度动画" />
+
+        <Button
+            android:id="@+id/btPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="位移动画" />
+
+        <Button
+            android:id="@+id/btScale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="缩放动画" />
+
+        <Button
+            android:id="@+id/btRotate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="旋转动画" />
+
+        <ImageView
+            android:id="@+id/ivAni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tabbar_compose_more"
+            android:text="差值动画图片" />
+
+        <ImageView
+            android:id="@+id/ivAniSvg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/anisvg"
+            android:valueType="pathType" />
+
+        <Button
+            android:id="@+id/btAni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="差值动画按钮" />
+
+        <ImageView
+            android:id="@+id/ivAniAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/anianisvg" />
+
+        <ImageView
+            android:id="@+id/ivSearchAni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_anisvg" />
+    </LinearLayout>
+</ScrollView>

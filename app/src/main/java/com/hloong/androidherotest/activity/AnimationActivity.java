@@ -7,6 +7,7 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
+import android.graphics.drawable.Animatable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -27,7 +28,7 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView tv;
     private Button btnPostion,btAni;
     private LinearLayout ll;
-    private ImageView ivAni;
+    private ImageView ivAni,ivAniSvg,ivAniAct,ivSearchAni;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +38,9 @@ public class AnimationActivity extends AppCompatActivity {
         btnPostion = (Button)findViewById(R.id.btPosition);
         ll = (LinearLayout)findViewById(R.id.ll);
         ivAni = (ImageView)findViewById(R.id.ivAni);
+        ivAniSvg = (ImageView)findViewById(R.id.ivAniSvg);
+        ivAniAct = (ImageView)findViewById(R.id.ivAniAct);
+        ivSearchAni = (ImageView)findViewById(R.id.ivAniAct);
         btAni = (Button)findViewById(R.id.btAni);
 
 
@@ -89,6 +93,15 @@ public class AnimationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 imgClose();
+            }
+        });
+
+        ivAniAct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((Animatable)ivAniSvg.getDrawable()).start();
+                ((Animatable)ivAniAct.getDrawable()).start();
+                ((Animatable)ivSearchAni.getDrawable()).start();
             }
         });
 
@@ -207,4 +220,5 @@ public class AnimationActivity extends AppCompatActivity {
         customTV.setRotateY(90);
         ivAni.startAnimation(customTV);
     }
+
 }

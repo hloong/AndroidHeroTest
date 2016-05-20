@@ -117,6 +117,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="发微博示例动画" />
+        <Button
+            android:id="@+id/btn_ani_f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发散动画" />
 
     </LinearLayout>
 </ScrollView>
